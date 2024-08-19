@@ -48,17 +48,10 @@ class Member {
         else{
             echo 'No copies available';
         }
-        
-        // if ($book->borrowBook()) {
-        //     echo $this->name . " successfully borrowed '" . $book->getTitle();
-        // } else {
-        //     echo $this->name . " could not borrow '" . $book->getTitle() . "' because it's out of stock.";
-        // }
     }
 
     public function returnBook(Book $book) {
         $book->returnBook();
-        // echo $this->name . " successfully returned '" . $book->getTitle() . "'.<br>";
     }
 }
 
